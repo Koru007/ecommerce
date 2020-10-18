@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="PcRocket"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://koru007.github.io/ecommerce/MainPage.html"/>
+    <meta property="og:image:url"
+          content="https://github.com/Koru007/ecommerce/blob/master/resources/ecommerce.png?raw=true"/>
+    <meta property="og:description" content="We gathered our experience over many years of supporting our clients in the US, Canada, Mexico and
+                    Europe. Providing professional technical support has been our goal from the very start. "/>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="resources/icon_s.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+<header>
+    <a href="PcRocket.html" class="phoneHeader"><img src="resources/logo.svg" alt="logo"></a>
+    <div class="upperHeaderBar">
+        <div class="leftSec">
+            <i class="fa fa-phone smallPho"></i>
+            <p>&nbsp +1 844 808 2300 </p>
+            <i class="fa fa-envelope"></i>
+            <p>&nbsp support@pcrocket-online.com</p>
+        </div>
+        <div class="rightSec">
+            <div class="dropdown center">
+                <a href="#"><i class="fa fa-language"></i>&nbsp English<i class="fa fa-angle-down smallArr"></i></a>
+                <div class="dropdown-content center smallDrop">
+                    <a href="#">English</a>
+                    <a href="#">Spanish</a>
+                </div>
+            </div>
+            <div class="dropdown center">
+                <a href="#"><i class="fa fa-usd"></i>&nbsp USD<i class="fa fa-angle-down smallArr"></i></a>
+                <div class="dropdown-content center smallDrop">
+                    <a href="#">USD</a>
+                    <a href="#">GBP</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomHeader">
+        <div class="headerA">
+            <a href="PcRocket.html" id="logo"><img src="resources/logo.svg" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li id="componentMenu">
+                    <div class="dropdown center">
+                        <a href="#Computers" onclick="toggleMenu();">Computers</a>
+                        <div class="dropdown-content center">
+                            <a href="#">Laptops</a>
+                            <a href="#">Desktops</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown center">
+                        <a href="#Hardware" onclick="toggleMenu();">Hardware</a>
+                        <div class="dropdown-content center">
+                            <a href="#">CPU / Processors </a>
+                            <a href="#">Memory</a>
+                            <a href="#">Motherboards</a>
+                            <a href="#">Video Cards</a>
+                            <a href="#">Power supplies</a>
+                            <a href="#">Fans & PC Cooling</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown center">
+                        <a href="#Peripherals" onclick="toggleMenu();">Peripherals</a>
+                        <div class="dropdown-content center">
+                            <a href="#">Monitors</a>
+                            <a href="#">Keyboard & Mice</a>
+                            <a href="#">Printers & Scanners</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown center">
+                        <a href="#Software" onclick="toggleMenu();">Software</a>
+                        <div class="dropdown-content center">
+                            <a href="#">Office & Accounting</a>
+                            <a href="#">Protection</a>
+                            <a href="#">Operating Systems</a>
+                            <a href="#">Photo and Design</a>
+                            <a href="#">Utilities</a>
+                            <a href="#">Bundles</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="headerB">
+            <div class="searchField">
+                <label>
+                    <input type="text" placeholder="Search our catalog">
+                </label>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="headerC">
+            <i class="fa fa-shopping-cart fa-lg"></i>
+            <i class="fa fa-user-o fa-lg"></i>
+
+        </div>
+    </div>
+</header>
+<section class="productContainer phoneWrapper">
+    <div class="prodDesc">
+        <img src="resources/product.png" alt="product">
+    </div>
+    <div class="prodDesc">
+        <div class="title">
+            <h1>Windows 10 Home & Office 2016 Pro Plus</h1>
+            <br>
+            <p><span>100$</span>&nbsp59.99$ <span id="tax">(Tax included)</span></p>
+        </div>
+        <div class="youGet">
+            <div class="youLeft">
+                <p>You Get:</p><br>
+                <ul>
+                    <li>Installation files (32 & 64bit)</li>
+                    <li>Product keys</li>
+                    <li>Free tech support</li>
+                    <li>Lifetime licenses for 1 PC each</li>
+                    <li>Guaranteed activation</li>
+                </ul>
+            </div>
+            <div class="youRight">
+                <ul>
+                    <li>Office is not compatible<br>with macOS & Chromebooks</li>
+                    <li>Windows is not compatible<br>with Chromebooks</li>
+                </ul>
+            </div>
+        </div>
+        <div class="addToCart">
+            <div class="counter" id="basket">
+                <button id="minus">−</button>
+                <input type="number" value="0" id="input"/>
+                <button id="plus">+</button>
+            </div>
+            <div class="cart">
+                <i class="fa fa-shopping-cart fa-lg"></i>
+                <p>ADD TO CART</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="middleSection">
+    <div class="container">
+        <!-- Tabs -->
+        <ul id="nav-tab" class="nav">
+            <li class="active"><a href="#home">DESCRIPTION</a></li>
+            <li><a href="#messages">SYSTEM REQUIREMENTS</a></li>
+            <li><a href="#settings">DELIVERY</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <div class="mainRow">
+                    <div class="col1">
+                        <img src="resources/win1.jpg" alt="pic_1">
+                    </div>
+                    <div class="col1">
+                        <h2>Windows 10 Home Best Windows So Far</h2>
+                        <p>System Windows 10 was designed to be moved from one device to another without any problems.
+                            It is
+                            fast and responsive. User gets free tech support from a real human being via chat, email or
+                            phone. Thanks to Windows 10 Operating system you can accomplish your tasks faster than ever
+                            before.</p>
+                    </div>
+                </div>
+                <div class="mainRow">
+                    <div class="col1">
+                        <h2>It just works</h2>
+                        <p>System windows 10 combines those Windows operating systems that you are familiar with adding
+                            excellent upgrades that you will love. Technologies like Instant Go1 let you quickly boot
+                            your operating system and restoring it. Windows 10 also has more in-built security features
+                            which will protect you from malicious software.</p>
+                    </div>
+                    <div class="col1">
+                        <img src="resources/win2.jpg" alt="pic_2">
+                    </div>
+                </div>
+                <div class="mainRow">
+                    <div class="col1">
+                        <img src="resources/msPac.jpg" alt="pic_1">
+                    </div>
+                    <div class="col1">
+                        <h2>Suite Contains :</h2>
+                        <p>Word - Excel - PowerPoint - OneNote - Outlook - Publisher - Access</p>
+                    </div>
+                </div>
+                <div class="mainRow">
+                    <div class="col1">
+                        <h2>Even more effective Office suite</h2>
+                        <p>Greatly improved and updated in comparison to other suites, elevates effectivity to a higher
+                            level thanks to teamwork possibilities, co-author, mobility and unprecedented security
+                            features.</p>
+                    </div>
+                    <div class="col1">
+                        <img src="resources/msDev.png" alt="pic_2">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane" id="messages">
+                <h2>Windows 10</h2>
+                <ul class="require">
+                    <li>A 1 GHz processor or faster 32-bit (x86) or 64-bit (x64) processor.</li>
+                    <li>1 GB of RAM (32-bit) or 2 GB RAM (64-bit)</li>
+                    <li>16 GB available hard disk space (32-bit) or 20 GB (64-bit)</li>
+                    <li>DirectX 9 graphics device with WDDM 1.0 or higher driver</li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="settings">
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-left">
+        <img src="resources/logo.svg" alt="logo">
+    </div>
+    <div class="footer_img">
+        <img src="resources/cloud.png" alt="cloudflare">
+        <img src="resources/mcafee.png" alt="cloudflare">
+    </div>
+    <div class="footer-menu">
+        <ul class="footer-right">
+            <li>
+                <h2>Products</h2>
+                <ul class="box1">
+                    <li><a href="#">Prices drop</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Best sales</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>
+                <h2>Our company</h2>
+                <ul class="box1">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>
+                <h2>Your account</h2>
+                <ul class="box1">
+                    <li><a href="#">Personal info </a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Credit slips</a></li>
+                    <li><a href="#">Addresses</a></li>
+                    <li><a href="#">Vouchers</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="footer-right">
+            <li>
+                <h2>Store information</h2>
+                <ul class="box1 info">
+                    <li><a href="#">PcRocket</a></li>
+                    <li><a href="#">Supplier 36 Ersel Street, STOCKTON</a></li>
+                    <li><a href="#">Credit slips</a></li>
+                    <li><a href="#">California CA 16504 USA</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>&nbsp +1 233 123 2233</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>&nbsp support@pcrocket-online.com</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    const minusButton = document.getElementById('minus');
+    const plusButton = document.getElementById('plus');
+    const inputField = document.getElementById('input');
+
+    minusButton.addEventListener('click', event => {
+        event.preventDefault();
+        const currentValue = Number(inputField.value) || 0;
+        if (currentValue > 0) {
+            inputField.value = currentValue - 1;
+        }
+    });
+
+    plusButton.addEventListener('click', event => {
+        event.preventDefault();
+        const currentValue = Number(inputField.value) || 0;
+        inputField.value = currentValue + 1;
+    });
+
+    function onTabClick(event) {
+        let activeTabs = document.querySelectorAll('.active');
+
+        activeTabs.forEach(function (tab) {
+            tab.className = tab.className.replace('active', '');
+        });
+
+        // activate new tab and panel
+        event.target.parentElement.className += ' active';
+        document.getElementById(event.target.href.split('#')[1]).className += ' active';
+    }
+
+    const element = document.getElementById('nav-tab');
+
+    element.addEventListener('click', onTabClick, false);
+</script>
+</body>
+</html>
